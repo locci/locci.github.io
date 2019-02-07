@@ -1,7 +1,7 @@
 {
 	"name": "SR",
 	"short_name": "SR",
-	"description": "",
+	"description": "Correções: botão start agora pode ser ativado via tecla enter/todo botão start produz som.",
 	"start_url": "index.html",
 	"display": "fullscreen",
 	"orientation": "landscape",
