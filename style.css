@@ -32,3 +32,8 @@ html, body, canvas {
 	font-size: 1.2em;
 }
 
+#notSupportedMessage em {
+	color: #888;
+}
+
+
