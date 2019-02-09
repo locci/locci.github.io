@@ -1,4 +1,4 @@
-git push
+git push -f origin master
 git add --all
 git commit -m "Commit"
 git push -u origin master
