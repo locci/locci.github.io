@@ -1,0 +1,2076 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/milto/onto/abbreviation"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://purl.org/milto/onto#java"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/milto/onto/stored_In"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://purl.org/milto/onto/python"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/milto/onto/stored_In"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/milto/onto/stored_In"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/milto/onto/java"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/milto/onto/abbreviation"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/milto/onto/neuronsNumberPerLayer"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/milto/onto/numberOfLayers"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Project creation date."
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/milto/onto/c"
+    }, {
+      "@id" : "http://purl.org/milto/onto/cc"
+    }, {
+      "@id" : "http://purl.org/milto/onto/java"
+    }, {
+      "@id" : "http://purl.org/milto/onto/python"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/milto/onto/gpuTypes"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/milto/onto/neuronsNumberPerLayer"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/milto/onto/numberOfDevice"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/milto/onto/numberOfLayers"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/milto/onto/taskPerformed"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/milto/onto/abbreviation"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://purl.org/milto/onto/c"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/milto/onto/stored_In"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://purl.org/milto/onto/cc"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/milto/onto/stored_In"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/subject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/milto/onto",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@value" : "2024-04"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@language" : "en",
+    "@value" : "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+  } ],
+  "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#vann:preferredNamespacePrefix" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://purl.org/milto/onto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An ontology to describe the testing process in machine learning tools and describe how failures occur in these systems. The work was done by Alexandre Locci Martins and Ana Cristina Vierira de Melo."
+  } ],
+  "http://www.w3.org/2002/07/owl#priorVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "4.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://purl.org/milto/onto/6.0.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "6.0"
+  } ],
+  "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/creator" : [ {
+    "@language" : "en",
+    "@value" : "Alexandre Locci Martins; https://alexandrelocci.wixsite.com/locci"
+  }, {
+    "@language" : "en",
+    "@value" : "Ana Cristina Vieira de Melo; https://www.ime.usp.br/acvm/"
+  } ],
+  "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/description" : [ {
+    "@language" : "en",
+    "@value" : "The objective of the Machine Learning Test Ontology (MiLTO) is to model machine learning test procedures and their associated data. The main objective of this study is to characterize failures in machine learning tools, especially TensorFlow information about systems and users. This ontology is based on doctoral research carried out at IME-USP."
+  } ],
+  "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/subject" : [ {
+    "@value" : "Characterization of faults.;Testing on systems based on machine learning;"
+  } ],
+  "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Machine Learning Test Ontology"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto#codeAPIc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/milto/onto/stored_In" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl/c"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/milto/onto/API_c"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Source code implemented for the c API functionality and stored in the directory c."
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto#distribute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/tensorflow"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto#docs_src",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/tensorflow"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto#dtensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/tensorflow"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto#examples",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/tensorflow"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto#go",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/tensorflow"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto#java",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/tensorflow"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto#js",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/tensorflow"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto#lite",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/tensorflow"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto#python",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/tensorflow"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto#security",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/tensorflow"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto#tools",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/tensorflow"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/API",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The purpose of the API (Application Programming Interface) is to establish connections between various applications catering to the user. They facilitate the integration of diverse systems and expedite user actions with anticipated responses. The API works in the background, so the average user will not even notice it in operation. TensorFlow offers APIs for programming languages, including C, C++, Java, and Python. These APIs are located in the Python, C, CCC, and Java directories, respectively."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Components"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid7"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/API_Deep_Learning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/API"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/API"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/API_Libraries",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/API"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/API_c",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/API"
+  }, {
+    "@id" : "_:genid8"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/API_cc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/API"
+  }, {
+    "@id" : "_:genid9"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/API_java",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/API"
+  }, {
+    "@id" : "_:genid10"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/API_python",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/API"
+  }, {
+    "@id" : "_:genid11"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Activation_Function",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Layers"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Algorithm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Categories_of_Root_Causes"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Build_failure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Categories_of_Symptoms"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/CPU",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Platform"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Categories_of_Root_Causes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Failure"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Categories_of_Symptoms",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Failure"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Colab",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Jupyter Notebook environment that is not necessary be setting and runs in the cloud."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Tools"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Components",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/TensorFlow"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Computation_Graph",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "TensorFlow uses compute graphs to define and manage its tasks. The graph implements the definition, construction, partition, optimization, operation, and execution of calculations."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Components"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Concurrency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Categories_of_Root_Causes"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Contrib_Directory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Contribution"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Contribution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Components"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Conﬁguration_error",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Categories_of_Root_Causes"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Corner_Case",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Categories_of_Root_Causes"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Crash",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Categories_of_Symptoms"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Dataset_Tensorflow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Resources"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Dimension_Mismatch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Categories_of_Root_Causes"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Directory_API",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Diretory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "It is a file system cataloging structure that contains references to other computer files and, possibly, other directories. On numerous computing devices, directories are commonly referred to as folders or drawers."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/TensorFlow"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Documentation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Components"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Dopamine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Libraries_&_Extensions"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Ecosystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/TensorFlow"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/FP16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Failure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Fairness_Indicators",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Libraries_&_Extensions"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Framework",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Components"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Functional_error",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Categories_of_Symptoms"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/GPU",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Platform"
+  }, {
+    "@id" : "_:genid12"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/GPU_Usage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Failure"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Google_Cloud_Public_Datasets",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Dataset_Tensorflow"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Hang",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Categories_of_Symptoms"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Hyperparameters",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Trainning"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Image_Classification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Task"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Inconsistency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Categories_of_Root_Causes"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Kaagle_Datasets",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Dataset_Tensorflow"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Kaggle_Model",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Model_Tensorflow"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Keras",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/TensorFlow"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/KerasNLP",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Libraries_&_Extensions"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Kernel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Implements the mains deep learning algorithms."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Components"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Layer_Properties",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Layers"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Layers",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Model"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Libraries_&_Extensions",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Ecosystem"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Library",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Components"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Logic_error",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Categories_of_Root_Causes"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Loss_Function",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Trainning"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/MLIR",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Tools"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/ML_Metadata",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Libraries_&_Extensions"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/ML_Perf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Tools"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Memory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Categories_of_Root_Causes"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Missing_Preprocessing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Preprocessing_of_Trainning_Data"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Missing_Redundant_Wrong_Layer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Layers"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Model",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Failure"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Model_Card_Toolkit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Libraries_&_Extensions"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Model_Garden",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Model_Tensorflow"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Model_Optimization_Toolkit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Libraries_&_Extensions"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Model_Tensorflow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Resources"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Model_Type_&_Propertes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Model"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Natural_Language_Processing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Task"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/NdArray",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Libraries_&_Extensions"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Neural_Structured_Learning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Libraries_&_Extensions"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Optimizer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Trainning"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Performance_degradation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Categories_of_Symptoms"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Platform",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Components"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Preprocessing_of_Trainning_Data",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Trainning"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Processing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Categories_of_Root_Causes"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Recommendation_systems",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Ecosystem"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Recommender_System",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Task"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Referenced_types_error",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Categories_of_Root_Causes"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Resources",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Ecosystem"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Responsible_AI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Ecosystem"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Runtime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The runtime implements the management of sessions, thread pools, and executors. TensorFlow has a common runtime (core/common runtime) and a distribution runtime (core/distributed runtime). Common runtime supports theexecutions on a local machine, and distribution runtime allows to deploy TensorFlow on distributed ones."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Components"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/SUT",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Refers to a system that is being tested for correct operation. According to ISTQB it is the test object. From a unit testing perspective, the system under test represents all of the classes in a test that are not predefined pieces of code like stubs or even mocks."
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid13"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Sonnet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Libraries_&_Extensions"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/TFX",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Libraries_&_Extensions"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/TFX-Addons",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Libraries_&_Extensions"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/TPU_Research_Cloud",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Tools"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Task",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/TensorFlow"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/TensorBoard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Tools"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/TensorFlow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "TensorFlow is an open-source platform developed by Google for machine learning and deep learning. It is commonly used to develop and train machine learning models."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid14"
+  }, {
+    "@id" : "_:genid15"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/TensorFlow.js",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Libraries_&_Extensions"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/TensorFlow_Addons",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Libraries_&_Extensions"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/TensorFlow_Agents",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Libraries_&_Extensions"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/TensorFlow_Compression",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Libraries_&_Extensions"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/TensorFlow_Data_Validation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Libraries_&_Extensions"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/TensorFlow_Decision_Forests",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Libraries_&_Extensions"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/TensorFlow_Federated",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Libraries_&_Extensions"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/TensorFlow_GNN",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Libraries_&_Extensions"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/TensorFlow_Graphics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Libraries_&_Extensions"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/TensorFlow_Hub",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Libraries_&_Extensions"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/TensorFlow_IO",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Libraries_&_Extensions"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/TensorFlow_JVM",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Libraries_&_Extensions"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/TensorFlow_Lattice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Libraries_&_Extensions"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/TensorFlow_Lite_Micro",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Libraries_&_Extensions"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/TensorFlow_Lite_Model_Maker",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Libraries_&_Extensions"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/TensorFlow_Lite_Support",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Libraries_&_Extensions"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/TensorFlow_Metadata",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Libraries_&_Extensions"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/TensorFlow_Model_Analysis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The goal of TensorFlow Model Analysis is to provide a mechanism for model evaluation in TFX. TensorFlow Model Analysis allows to perform model evaluations in the TFX pipeline, and view resultant metrics and plots in a Jupyter notebook."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Libraries_&_Extensions"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/TensorFlow_Model_Remediation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Libraries_&_Extensions"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/TensorFlow_Official_Datasets",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Dataset_Tensorflow"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/TensorFlow_Privacy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Libraries_&_Extensions"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/TensorFlow_Probability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Libraries_&_Extensions"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/TensorFlow_Quantum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Libraries_&_Extensions"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/TensorFlow_Ranking",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Libraries_&_Extensions"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/TensorFlow_Recommenders",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Libraries_&_Extensions"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/TensorFlow_Recommenders_Addons",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Libraries_&_Extensions"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/TensorFlow_Serving",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Libraries_&_Extensions"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/TensorFlow_Text",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Libraries_&_Extensions"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/TensorFlow_Transform",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Libraries_&_Extensions"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Tensorflow.js_Models",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Model_Tensorflow"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Tensorflow_Playground",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Tools"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Tensors_&_Inputs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Failure"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Test",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Time_Series_Forecasting",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Task"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Tool",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Components"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Tools",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Applications that support and accelerate TensorFlow workflows."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Ecosystem"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Trainning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Failure"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Trainning_Data",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Trainning"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Trainning_Process",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Trainning"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Type_Confusion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Categories_of_Root_Causes"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Validation/Testing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Trainning"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Version",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/TensorFlow"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Version_Keras",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Keras"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Visual_Block",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Tools"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Warning-style_error",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Categories_of_Symptoms"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/What_If",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Tools"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Wrong_Input",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Tensors_&_Inputs"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Wrong_Input_Format",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Wrong_Input"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Wrong_Preprocessing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Preprocessing_of_Trainning_Data"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Wrong_Shape_of_Input",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Wrong_Input"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Wrong_Tensor_Shape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Tensors_&_Inputs"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Wrong_Type_of_Input_Data",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Wrong_Input"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/XLA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Tools"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/abbreviation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : ""
+  }, {
+    "@value" : "A short form for an longer title or name."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/absl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/activity_watcher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/android",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/api_def",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/benchmark",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/boringssl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/c",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The directory in which the TensorFlow API C source code is situated."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/tensorflow"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/cc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The directory in which the TensorFlow API C++ source code is situated."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/tensorflow"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/ci",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Diretory"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/clang_toolchain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/compiler",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/tensorflow"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/compute_library",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/config",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/contrib",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Diretory"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/contrib/seq2seq",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Contrib_Directory"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/core",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/tensorflow"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/core/common_runtime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/core/debug",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/core/distributed_runtime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/core/example",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/core/framework",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/core/graph",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/core/grappler",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/core/ops",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/core/profile",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/core/protobuf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/core_util",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/data",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/dlpack",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/ducc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/eigen3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/example",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/examples",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Documentation"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/exemples",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Components"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/farmhash",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/fft2d",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/file",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Framework"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/flatbuffers",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/function",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/gemmlowp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/gloo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/googleapis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/gpuTypes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid2"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/milto/onto/setting"
+  } ],
+  "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/description" : [ {
+    "@value" : "GPUs can be classified as onboard or offboard."
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/gpus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/grpc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/hardwareType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/hexagon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/highwayhash",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/hwloc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/icu",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/implib_so",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/ir",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/java",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The directory where the TensorFlow API Java source code is located."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/jpeg",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/kernels",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/kissfft",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/lib",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/libprotobuf_mutator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/llvm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/llvm_openmp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/logging",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Framework"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/memory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Framework"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/mkl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/mkl_dnn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/mpi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/mpitrampoline",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/nanobind",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/nasm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/nccl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/neuronsNumberPerLayer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid3"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/milto/onto/setting"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/numberOfDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid4"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Number of devices running tensorflow."
+  }, {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : ""
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/numberOfLayers",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid5"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/milto/onto/setting"
+  } ],
+  "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/description" : [ {
+    "@value" : "Number of layers defined in configuration."
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/nvtx",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/opencl_headers",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/ops",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/ortools",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/pasta",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/platform",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/profile",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/profiler",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/protobuf_tp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/public",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/py",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/pybind11_abseil",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/pybind11_bazel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/pybind11_protobuf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/python",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The directory where the TensorFlow API Python source code is located."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/python_runtime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/remote_config",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/robin_map",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/root",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/runtime_fallback",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/ruy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/seq2seq",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/contrib"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/setting",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://purl.org/milto/onto/shardy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/sobol_data",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/stablehlo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/stored_In",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Object is stored in another Object."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/milto/onto/Components"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/milto/onto/Diretory"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/summary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/systemlibs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/taskPerformed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid6"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ],
+  "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Tasks for which TendorFlow is used."
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/tensorflow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Diretory"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/tensorrt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/tf.data",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/tf.estimador",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/API_Deep_Learning"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/tf.feuture_column",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/API_Deep_Learning"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/tf.io",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/tf.keras",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/API_Deep_Learning"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/tf.queue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/tf_runtime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/tfrt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/third-party",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Diretory"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/tools",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Diretory"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/tpu",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/transforms",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/triton",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/user_ops",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/util",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/vulkan_headers",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/xla",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl/active_Is",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2002/07/owl#propertyDisjointWith" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl/deprecated_Is"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl/c",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl/cc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl/codeAPIcc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/milto/onto/stored_In" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl/cc"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/milto/onto/API_cc"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl/codeAPIjava",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/milto/onto/API_java"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl/deprecated_Is",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl/java",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/milto/onto/stored_In" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl/java"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/milto/onto#java"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#vann:preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/milto/onto/Diretory"
+  } ]
+}, {
+  "@id" : "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/subject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]
