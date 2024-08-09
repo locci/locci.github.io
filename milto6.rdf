@@ -1,0 +1,2560 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/milto/onto#"
+     xml:base="http://purl.org/milto/onto"
+     xmlns:dc="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#vann:"
+     xmlns:milto="http://purl.org/milto/onto/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://purl.org/milto/onto">
+        <owl:versionIRI rdf:resource="http://purl.org/milto/onto/6.0.0"/>
+        <terms:created>2024-04</terms:created>
+        <terms:license xml:lang="en">https://creativecommons.org/licenses/by-nc-sa/4.0/</terms:license>
+        <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/milto/onto</vann:preferredNamespacePrefix>
+        <rdfs:comment xml:lang="en">An ontology to describe the testing process in machine learning tools and describe how failures occur in these systems. The work was done by Alexandre Locci Martins and Ana Cristina Vierira de Melo.</rdfs:comment>
+        <owl:priorVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</owl:priorVersion>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</owl:versionInfo>
+        <dc:creator xml:lang="en">Alexandre Locci Martins; https://alexandrelocci.wixsite.com/locci</dc:creator>
+        <dc:creator xml:lang="en">Ana Cristina Vieira de Melo; https://www.ime.usp.br/acvm/</dc:creator>
+        <dc:description xml:lang="en">The objective of the Machine Learning Test Ontology (MiLTO) is to model machine learning test procedures and their associated data. The main objective of this study is to characterize failures in machine learning tools, especially TensorFlow information about systems and users. This ontology is based on doctoral research carried out at IME-USP.</dc:description>
+        <dc:subject>Characterization of faults.;Testing on systems based on machine learning;</dc:subject>
+        <dc:title xml:lang="en">Machine Learning Test Ontology</dc:title>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/subject -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/subject"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#vann:preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#vann:preferredNamespacePrefix"/>
+    
+
+
+    <!-- https://www.dublincore.org/specifications/dublin-core/dcmi-terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/creator"/>
+    
+
+
+    <!-- https://www.dublincore.org/specifications/dublin-core/dcmi-terms/description -->
+
+    <owl:AnnotationProperty rdf:about="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/description"/>
+    
+
+
+    <!-- https://www.dublincore.org/specifications/dublin-core/dcmi-terms/subject -->
+
+    <owl:AnnotationProperty rdf:about="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/subject"/>
+    
+
+
+    <!-- https://www.dublincore.org/specifications/dublin-core/dcmi-terms/title -->
+
+    <owl:AnnotationProperty rdf:about="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/milto/onto/stored_In -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/milto/onto/stored_In">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/milto/onto/Components"/>
+        <rdfs:range rdf:resource="http://purl.org/milto/onto/Diretory"/>
+        <rdfs:comment xml:lang="en">Object is stored in another Object.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl/active_Is -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl/active_Is">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.co-ode.org/ontologies/ont.owl/deprecated_Is"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl/deprecated_Is -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl/deprecated_Is">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:range rdf:resource="http://purl.org/milto/onto/Diretory"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/milto/onto/abbreviation -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/milto/onto/abbreviation">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/milto/onto/abbreviation"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label>A short form for an longer title or name.</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/milto/onto/gpuTypes -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/milto/onto/gpuTypes">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/milto/onto/setting"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/milto/onto/gpuTypes"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <dc:description>GPUs can be classified as onboard or offboard.</dc:description>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/milto/onto/hardwareType -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/milto/onto/hardwareType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/milto/onto/neuronsNumberPerLayer -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/milto/onto/neuronsNumberPerLayer">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/milto/onto/setting"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/milto/onto/neuronsNumberPerLayer"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/milto/onto/numberOfDevice -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/milto/onto/numberOfDevice">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/milto/onto/numberOfDevice"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <dc:description xml:lang="en">Number of devices running tensorflow.</dc:description>
+        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"></dc:description>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/milto/onto/numberOfLayers -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/milto/onto/numberOfLayers">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/milto/onto/setting"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/milto/onto/numberOfLayers"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <dc:description>Number of layers defined in configuration.</dc:description>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/milto/onto/setting -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/milto/onto/setting"/>
+    
+
+
+    <!-- http://purl.org/milto/onto/taskPerformed -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/milto/onto/taskPerformed">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/milto/onto/taskPerformed"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <dc:description xml:lang="en">Tasks for which TendorFlow is used.</dc:description>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/milto/onto#distribute -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#distribute">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/tensorflow"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto#docs_src -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#docs_src">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/tensorflow"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto#dtensor -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#dtensor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/tensorflow"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto#examples -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#examples">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/tensorflow"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto#go -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#go">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/tensorflow"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto#java -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#java">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/tensorflow"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto#js -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#js">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/tensorflow"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto#lite -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#lite">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/tensorflow"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto#python -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#python">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/tensorflow"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto#security -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#security">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/tensorflow"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto#tools -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#tools">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/tensorflow"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/API -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/API">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/milto/onto/abbreviation"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Components"/>
+        <rdfs:comment xml:lang="en">The purpose of the API (Application Programming Interface) is to establish connections between various applications catering to the user. They facilitate the integration of diverse systems and expedite user actions with anticipated responses. The API works in the background, so the average user will not even notice it in operation. TensorFlow offers APIs for programming languages, including C, C++, Java, and Python. These APIs are located in the Python, C, CCC, and Java directories, respectively.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/API_Deep_Learning -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/API_Deep_Learning">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/API"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/API_Libraries -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/API_Libraries">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/API"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/API_c -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/API_c">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/API"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/milto/onto/stored_In"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/milto/onto/c"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/API_cc -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/API_cc">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/API"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/milto/onto/stored_In"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/milto/onto/cc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/API_java -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/API_java">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/API"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/milto/onto/stored_In"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/milto/onto#java"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/API_python -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/API_python">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/API"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/milto/onto/stored_In"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/milto/onto/python"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Activation_Function -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Activation_Function">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Layers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Algorithm -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Algorithm">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Categories_of_Root_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Build_failure -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Build_failure">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Categories_of_Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/CPU -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/CPU">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Platform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Categories_of_Root_Causes -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Categories_of_Root_Causes">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Failure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Categories_of_Symptoms -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Categories_of_Symptoms">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Failure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Colab -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Colab">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Tools"/>
+        <rdfs:comment>Jupyter Notebook environment that is not necessary be setting and runs in the cloud.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Components -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Components">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/TensorFlow"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Computation_Graph -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Computation_Graph">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Components"/>
+        <rdfs:comment>TensorFlow uses compute graphs to define and manage its tasks. The graph implements the definition, construction, partition, optimization, operation, and execution of calculations.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Concurrency -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Concurrency">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Categories_of_Root_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Contrib_Directory -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Contrib_Directory">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Contribution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Contribution -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Contribution">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Components"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Conﬁguration_error -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Conﬁguration_error">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Categories_of_Root_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Corner_Case -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Corner_Case">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Categories_of_Root_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Crash -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Crash">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Categories_of_Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Dataset_Tensorflow -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Dataset_Tensorflow">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Resources"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Dimension_Mismatch -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Dimension_Mismatch">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Categories_of_Root_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Directory_API -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Directory_API">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Diretory -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Diretory">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/TensorFlow"/>
+        <rdfs:comment xml:lang="en">It is a file system cataloging structure that contains references to other computer files and, possibly, other directories. On numerous computing devices, directories are commonly referred to as folders or drawers.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Documentation -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Documentation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Components"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Dopamine -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Dopamine">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Libraries_&amp;_Extensions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Ecosystem -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Ecosystem">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/TensorFlow"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/FP16 -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/FP16">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Failure -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Failure"/>
+    
+
+
+    <!-- http://purl.org/milto/onto/Fairness_Indicators -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Fairness_Indicators">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Libraries_&amp;_Extensions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Framework -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Framework">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Components"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Functional_error -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Functional_error">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Categories_of_Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/GPU -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/GPU">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Platform"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/milto/onto/stored_In"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/milto/onto/java"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/GPU_Usage -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/GPU_Usage">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Failure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Google_Cloud_Public_Datasets -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Google_Cloud_Public_Datasets">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Dataset_Tensorflow"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Hang -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Hang">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Categories_of_Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Hyperparameters -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Hyperparameters">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Trainning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Image_Classification -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Image_Classification">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Task"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Inconsistency -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Inconsistency">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Categories_of_Root_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Kaagle_Datasets -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Kaagle_Datasets">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Dataset_Tensorflow"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Kaggle_Model -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Kaggle_Model">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Model_Tensorflow"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Keras -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Keras">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/TensorFlow"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/KerasNLP -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/KerasNLP">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Libraries_&amp;_Extensions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Kernel -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Kernel">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Components"/>
+        <rdfs:comment xml:lang="en">Implements the mains deep learning algorithms.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Layer_Properties -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Layer_Properties">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Layers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Layers -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Layers">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Library -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Library">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Components"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Logic_error -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Logic_error">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Categories_of_Root_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Loss_Function -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Loss_Function">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Trainning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/MLIR -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/MLIR">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/ML_Metadata -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/ML_Metadata">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Libraries_&amp;_Extensions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/ML_Perf -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/ML_Perf">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Memory -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Memory">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Categories_of_Root_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Missing_Preprocessing -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Missing_Preprocessing">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Preprocessing_of_Trainning_Data"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Missing_Redundant_Wrong_Layer -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Missing_Redundant_Wrong_Layer">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Layers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Model -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Model">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Failure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Model_Card_Toolkit -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Model_Card_Toolkit">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Libraries_&amp;_Extensions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Model_Garden -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Model_Garden">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Model_Tensorflow"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Model_Optimization_Toolkit -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Model_Optimization_Toolkit">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Libraries_&amp;_Extensions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Model_Tensorflow -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Model_Tensorflow">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Resources"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Natural_Language_Processing -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Natural_Language_Processing">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Task"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/NdArray -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/NdArray">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Libraries_&amp;_Extensions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Neural_Structured_Learning -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Neural_Structured_Learning">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Libraries_&amp;_Extensions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Optimizer -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Optimizer">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Trainning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Performance_degradation -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Performance_degradation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Categories_of_Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Platform -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Platform">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Components"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Preprocessing_of_Trainning_Data -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Preprocessing_of_Trainning_Data">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Trainning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Processing -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Processing">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Categories_of_Root_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Recommendation_systems -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Recommendation_systems">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Ecosystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Recommender_System -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Recommender_System">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Task"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Referenced_types_error -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Referenced_types_error">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Categories_of_Root_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Resources -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Resources">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Ecosystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Responsible_AI -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Responsible_AI">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Ecosystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Runtime -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Runtime">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Components"/>
+        <rdfs:comment xml:lang="en">The runtime implements the management of sessions, thread pools, and executors. TensorFlow has a common runtime (core/common runtime) and a distribution runtime (core/distributed runtime). Common runtime supports theexecutions on a local machine, and distribution runtime allows to deploy TensorFlow on distributed ones.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/SUT -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/SUT">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/milto/onto/abbreviation"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">Refers to a system that is being tested for correct operation. According to ISTQB it is the test object. From a unit testing perspective, the system under test represents all of the classes in a test that are not predefined pieces of code like stubs or even mocks.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Sonnet -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Sonnet">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Libraries_&amp;_Extensions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/TFX -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/TFX">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Libraries_&amp;_Extensions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/TFX-Addons -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/TFX-Addons">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Libraries_&amp;_Extensions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/TPU_Research_Cloud -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/TPU_Research_Cloud">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Task -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Task">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/TensorFlow"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/TensorBoard -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/TensorBoard">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/TensorFlow -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/TensorFlow">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/milto/onto/neuronsNumberPerLayer"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/milto/onto/numberOfLayers"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">TensorFlow is an open-source platform developed by Google for machine learning and deep learning. It is commonly used to develop and train machine learning models.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/TensorFlow.js -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/TensorFlow.js">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Libraries_&amp;_Extensions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/TensorFlow_Addons -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/TensorFlow_Addons">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Libraries_&amp;_Extensions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/TensorFlow_Agents -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/TensorFlow_Agents">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Libraries_&amp;_Extensions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/TensorFlow_Compression -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/TensorFlow_Compression">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Libraries_&amp;_Extensions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/TensorFlow_Data_Validation -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/TensorFlow_Data_Validation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Libraries_&amp;_Extensions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/TensorFlow_Decision_Forests -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/TensorFlow_Decision_Forests">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Libraries_&amp;_Extensions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/TensorFlow_Federated -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/TensorFlow_Federated">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Libraries_&amp;_Extensions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/TensorFlow_GNN -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/TensorFlow_GNN">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Libraries_&amp;_Extensions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/TensorFlow_Graphics -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/TensorFlow_Graphics">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Libraries_&amp;_Extensions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/TensorFlow_Hub -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/TensorFlow_Hub">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Libraries_&amp;_Extensions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/TensorFlow_IO -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/TensorFlow_IO">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Libraries_&amp;_Extensions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/TensorFlow_JVM -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/TensorFlow_JVM">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Libraries_&amp;_Extensions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/TensorFlow_Lattice -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/TensorFlow_Lattice">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Libraries_&amp;_Extensions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/TensorFlow_Lite_Micro -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/TensorFlow_Lite_Micro">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Libraries_&amp;_Extensions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/TensorFlow_Lite_Model_Maker -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/TensorFlow_Lite_Model_Maker">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Libraries_&amp;_Extensions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/TensorFlow_Lite_Support -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/TensorFlow_Lite_Support">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Libraries_&amp;_Extensions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/TensorFlow_Metadata -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/TensorFlow_Metadata">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Libraries_&amp;_Extensions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/TensorFlow_Model_Analysis -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/TensorFlow_Model_Analysis">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Libraries_&amp;_Extensions"/>
+        <rdfs:comment>The goal of TensorFlow Model Analysis is to provide a mechanism for model evaluation in TFX. TensorFlow Model Analysis allows to perform model evaluations in the TFX pipeline, and view resultant metrics and plots in a Jupyter notebook.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/TensorFlow_Model_Remediation -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/TensorFlow_Model_Remediation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Libraries_&amp;_Extensions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/TensorFlow_Official_Datasets -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/TensorFlow_Official_Datasets">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Dataset_Tensorflow"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/TensorFlow_Privacy -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/TensorFlow_Privacy">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Libraries_&amp;_Extensions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/TensorFlow_Probability -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/TensorFlow_Probability">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Libraries_&amp;_Extensions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/TensorFlow_Quantum -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/TensorFlow_Quantum">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Libraries_&amp;_Extensions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/TensorFlow_Ranking -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/TensorFlow_Ranking">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Libraries_&amp;_Extensions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/TensorFlow_Recommenders -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/TensorFlow_Recommenders">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Libraries_&amp;_Extensions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/TensorFlow_Recommenders_Addons -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/TensorFlow_Recommenders_Addons">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Libraries_&amp;_Extensions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/TensorFlow_Serving -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/TensorFlow_Serving">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Libraries_&amp;_Extensions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/TensorFlow_Text -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/TensorFlow_Text">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Libraries_&amp;_Extensions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/TensorFlow_Transform -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/TensorFlow_Transform">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Libraries_&amp;_Extensions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Tensorflow.js_Models -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Tensorflow.js_Models">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Model_Tensorflow"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Tensorflow_Playground -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Tensorflow_Playground">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Test -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Test"/>
+    
+
+
+    <!-- http://purl.org/milto/onto/Time_Series_Forecasting -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Time_Series_Forecasting">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Task"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Tool -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Tool">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Components"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Tools -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Tools">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Ecosystem"/>
+        <rdfs:comment>Applications that support and accelerate TensorFlow workflows.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Trainning -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Trainning">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Failure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Trainning_Data -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Trainning_Data">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Trainning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Trainning_Process -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Trainning_Process">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Trainning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Type_Confusion -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Type_Confusion">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Categories_of_Root_Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Version -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Version">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/TensorFlow"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Version_Keras -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Version_Keras">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Keras"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Visual_Block -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Visual_Block">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Warning-style_error -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Warning-style_error">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Categories_of_Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/What_If -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/What_If">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Wrong_Input -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Wrong_Input">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Tensors_&amp;_Inputs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Wrong_Input_Format -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Wrong_Input_Format">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Wrong_Input"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Wrong_Preprocessing -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Wrong_Preprocessing">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Preprocessing_of_Trainning_Data"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Wrong_Shape_of_Input -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Wrong_Shape_of_Input">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Wrong_Input"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Wrong_Tensor_Shape -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Wrong_Tensor_Shape">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Tensors_&amp;_Inputs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Wrong_Type_of_Input_Data -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Wrong_Type_of_Input_Data">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Wrong_Input"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/XLA -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/XLA">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/absl -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/absl">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/activity_watcher -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/activity_watcher">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/android -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/android">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/api_def -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/api_def">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/benchmark -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/benchmark">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/boringssl -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/boringssl">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/c -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/c">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/tensorflow"/>
+        <rdfs:comment xml:lang="en">The directory in which the TensorFlow API C source code is situated.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/cc -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/cc">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/tensorflow"/>
+        <rdfs:comment xml:lang="en">The directory in which the TensorFlow API C++ source code is situated.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/ci -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/ci">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Diretory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/clang_toolchain -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/clang_toolchain">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/compiler -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/compiler">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/tensorflow"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/compute_library -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/compute_library">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/config -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/config">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/contrib -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/contrib">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Diretory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/core -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/core">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/tensorflow"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/core_util -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/core_util">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/data -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/data">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/dlpack -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/dlpack">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/ducc -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/ducc">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/eigen3 -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/eigen3">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/example -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/example">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/examples -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/examples">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Documentation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/exemples -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/exemples">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Components"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/farmhash -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/farmhash">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/fft2d -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/fft2d">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/file -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/file">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/flatbuffers -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/flatbuffers">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/function -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/function">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/gemmlowp -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/gemmlowp">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/gloo -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/gloo">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/googleapis -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/googleapis">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/gpus -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/gpus">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/grpc -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/grpc">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/hexagon -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/hexagon">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/highwayhash -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/highwayhash">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/hwloc -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/hwloc">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/icu -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/icu">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/implib_so -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/implib_so">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/ir -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/ir">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/java -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/java">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/core"/>
+        <rdfs:comment>The directory where the TensorFlow API Java source code is located.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/jpeg -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/jpeg">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/kernels -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/kernels">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/kissfft -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/kissfft">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/lib -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/lib">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/libprotobuf_mutator -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/libprotobuf_mutator">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/llvm -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/llvm">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/llvm_openmp -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/llvm_openmp">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/logging -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/logging">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/memory -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/memory">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/mkl -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/mkl">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/mkl_dnn -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/mkl_dnn">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/mpi -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/mpi">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/mpitrampoline -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/mpitrampoline">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/nanobind -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/nanobind">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/nasm -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/nasm">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/nccl -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/nccl">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/nvtx -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/nvtx">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/opencl_headers -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/opencl_headers">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/ops -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/ops">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/ortools -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/ortools">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/pasta -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/pasta">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/platform -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/platform">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/profile -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/profile">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/profiler -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/profiler">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/protobuf_tp -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/protobuf_tp">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/public -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/public">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/py -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/py">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/pybind11_abseil -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/pybind11_abseil">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/pybind11_bazel -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/pybind11_bazel">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/pybind11_protobuf -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/pybind11_protobuf">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/python -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/python">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/core"/>
+        <rdfs:comment>The directory where the TensorFlow API Python source code is located.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/python_runtime -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/python_runtime">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/remote_config -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/remote_config">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/robin_map -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/robin_map">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/root -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/root">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/runtime_fallback -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/runtime_fallback">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/ruy -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/ruy">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/seq2seq -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/seq2seq">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/contrib"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/shardy -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/shardy">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/sobol_data -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/sobol_data">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/stablehlo -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/stablehlo">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/summary -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/summary">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/systemlibs -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/systemlibs">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/tensorflow -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/tensorflow">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Diretory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/tensorrt -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/tensorrt">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/tf.data -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/tf.data">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/tf.estimador -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/tf.estimador">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/API_Deep_Learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/tf.feuture_column -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/tf.feuture_column">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/API_Deep_Learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/tf.io -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/tf.io">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/tf.keras -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/tf.keras">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/API_Deep_Learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/tf.queue -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/tf.queue">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/tf_runtime -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/tf_runtime">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/tfrt -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/tfrt">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/third-party -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/third-party">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Diretory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/tools -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/tools">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Diretory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/tpu -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/tpu">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/transforms -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/transforms">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/triton -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/triton">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/user_ops -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/user_ops">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/util -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/util">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/vulkan_headers -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/vulkan_headers">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/xla -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/xla">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/API"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Libraries_&amp;_Extensions -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Libraries_&amp;_Extensions">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Ecosystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Model_Type_&amp;_Propertes -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Model_Type_&amp;_Propertes">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Tensors_&amp;_Inputs -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Tensors_&amp;_Inputs">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Failure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/Validation/Testing -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Validation/Testing">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Trainning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/contrib/seq2seq -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/contrib/seq2seq">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Contrib_Directory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/core/common_runtime -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/core/common_runtime">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/core/debug -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/core/debug">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/core/distributed_runtime -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/core/distributed_runtime">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/core/example -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/core/example">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/core/framework -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/core/framework">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/core/graph -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/core/graph">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/core/grappler -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/core/grappler">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/core/ops -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/core/ops">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/core/profile -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/core/profile">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/core/protobuf -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/core/protobuf">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/core"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/milto/onto#codeAPIc -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/milto/onto#codeAPIc">
+        <rdf:type rdf:resource="http://purl.org/milto/onto/API_c"/>
+        <milto:stored_In rdf:resource="http://www.co-ode.org/ontologies/ont.owl/c"/>
+        <rdfs:comment xml:lang="en">Source code implemented for the c API functionality and stored in the directory c.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl/c -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl/c"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl/cc -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl/cc"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl/codeAPIcc -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl/codeAPIcc">
+        <rdf:type rdf:resource="http://purl.org/milto/onto/API_cc"/>
+        <milto:stored_In rdf:resource="http://www.co-ode.org/ontologies/ont.owl/cc"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl/codeAPIjava -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl/codeAPIjava">
+        <rdf:type rdf:resource="http://purl.org/milto/onto/API_java"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl/java -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl/java">
+        <rdf:type rdf:resource="http://purl.org/milto/onto#java"/>
+        <milto:stored_In rdf:resource="http://www.co-ode.org/ontologies/ont.owl/java"/>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdfs:comment>Project creation date.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/milto/onto/c"/>
+            <rdf:Description rdf:about="http://purl.org/milto/onto/cc"/>
+            <rdf:Description rdf:about="http://purl.org/milto/onto/java"/>
+            <rdf:Description rdf:about="http://purl.org/milto/onto/python"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
