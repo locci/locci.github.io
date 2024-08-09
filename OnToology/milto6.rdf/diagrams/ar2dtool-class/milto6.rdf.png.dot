@@ -1,0 +1,45 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "milto:c" "milto:Diretory" "milto:java" "base:java" "milto:python" "milto:cc" "milto:Components" ; /*classes style*/
+	"milto:gpuTypes" -> "milto:setting" [ label = "rdfs:subPropertyOf" ];
+	"milto:neuronsNumberPerLayer" -> "milto:setting" [ label = "rdfs:subPropertyOf" ];
+	"http://www.co-ode.org/ontologies/ont.owl/codeAPIcc" -> "http://www.co-ode.org/ontologies/ont.owl/cc" [ label = "milto:stored_In" ];
+	"base:codeAPIc" -> "http://www.co-ode.org/ontologies/ont.owl/c" [ label = "milto:stored_In" ];
+	"http://purl.org/milto/onto" -> "http://purl.org/milto/onto/6.0.0" [ label = "owl:versionIRI" ];
+	"milto:hardwareType" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"http://www.co-ode.org/ontologies/ont.owl/active_Is" -> "http://www.co-ode.org/ontologies/ont.owl/deprecated_Is" [ label = "owl:propertyDisjointWith" ];
+	"http://www.co-ode.org/ontologies/ont.owl/java" -> "http://www.co-ode.org/ontologies/ont.owl/java" [ label = "milto:stored_In" ];
+	"NULL" -> "-5a2ee67:191376b65e8:-7fea" [ label = "rdf:rest" ];
+	"NULL" -> "milto:c" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "milto:java" [ label = "rdf:first" ];
+	"NULL" -> "-5a2ee67:191376b65e8:-7feb" [ label = "owl:members" ];
+	"NULL" -> "xsd:string" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "base:java" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "-5a2ee67:191376b65e8:-7fe9" [ label = "rdf:rest" ];
+	"NULL" -> "milto:taskPerformed" [ label = "owl:onProperty" ];
+	"NULL" -> "milto:numberOfDevice" [ label = "owl:onProperty" ];
+	"NULL" -> "milto:java" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "-5a2ee67:191376b65e8:-7fe8" [ label = "rdf:rest" ];
+	"NULL" -> "milto:numberOfLayers" [ label = "owl:onProperty" ];
+	"NULL" -> "milto:neuronsNumberPerLayer" [ label = "owl:onProperty" ];
+	"NULL" -> "milto:python" [ label = "rdf:first" ];
+	"NULL" -> "milto:python" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "milto:cc" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "xsd:string" [ label = "owl:onDataRange" ];
+	"NULL" -> "milto:abbreviation" [ label = "owl:onProperty" ];
+	"NULL" -> "xsd:int" [ label = "owl:onDataRange" ];
+	"NULL" -> "milto:c" [ label = "rdf:first" ];
+	"NULL" -> "milto:stored_In" [ label = "owl:onProperty" ];
+	"NULL" -> "milto:cc" [ label = "rdf:first" ];
+	"NULL" -> "milto:gpuTypes" [ label = "owl:onProperty" ];
+	"milto:taskPerformed" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"milto:numberOfLayers" -> "milto:setting" [ label = "rdfs:subPropertyOf" ];
+	"owl:Thing" -> "xsd:int" [ label = "milto:neuronsNumberPerLayer" ];
+	"owl:Thing" -> "xsd:int" [ label = "milto:numberOfDevice" ];
+	"owl:Thing" -> "xsd:string" [ label = "milto:abbreviation" ];
+	"milto:Components" -> "milto:Diretory" [ label = "milto:stored_In" ];
+	"owl:Thing" -> "milto:Diretory" [ label = "owl:topObjectProperty" ];
+
+}
